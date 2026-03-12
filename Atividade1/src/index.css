@@ -1,0 +1,123 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-c{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../public/imgs/fundo.jpg");
+}
+
+header{
+    background-color: rgb(7, 6, 63);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.container{
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.651), black);
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    padding-top: 16px;
+    width: 960px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 8px;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    width: 350px;
+}
+
+.description span{
+    text-align: justify;
+}
+
+.skills ul{
+    list-style: none;
+}
+
+.skills div h3{
+    padding-bottom: 4px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.image img{
+    max-width: 150px;
+    height: 210px;
+    object-fit: cover;
+}
+
+.matriz-curricular h1{
+    font-size: 32px;
+}
+
+.matriz-curricular ul{
+    list-style: none;
+    padding: 0;
+}
+
+.matriz-curricular ul li h1{
+    font-size: 24px;
+}
+
+.tabelas{
+    text-align: left;
+}
+
+.tabelas, th, td{
+    border: 1px solid rgb(194, 194, 194);
+    padding: 8px;
+}
+
+footer{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    height: 150px;
+}
+
+footer img{
+    max-height: 100px;
+}

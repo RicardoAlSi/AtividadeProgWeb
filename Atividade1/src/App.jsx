@@ -86,37 +86,81 @@ function App() {
   }
 
   return (
-    <div className="container">
-      <header></header>
-      <main>
-        <aside></aside>
-        <section>
-          <div></div>
-          <ul>
-            {semestres.semestres.map((semestre) => (
-              <li key={semestre.periodo}>
-                <h1>Semestre {semestre.periodo}</h1>
-
-                <ul>
-                  {semestre.disciplinas.map((disc) => (
-                    <li key={disc.componente}>
-                      <h2>{disc.nome}</h2>
-                      <div>
-                        <span>{disc.componente}</span>
-                        <span>{disc.carga_horaria}h</span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
+    <div className="body-c">
+      <header>
+        <h1>Análise e Desenvolvimento de Sistemas</h1>
+        <nav>
+          <ul className="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
           </ul>
-        </section>
+        </nav>
+      </header>
 
+      <main className="container">
+
+        <div className="content">
+          <section className="matriz-curricular">
+            <h1>Matriz Curricular</h1>
+            <ul>
+              {semestres.semestres.map((semestre) => (
+                <li key={semestre.periodo}>
+                  <h1>Semestre {semestre.periodo}</h1>
+                  <table className="tabelas">
+                    <tr>
+                      <th>Disciplina</th>
+                      <th>Carga Horária</th>
+                      <th>Componente</th>
+                    </tr>
+                    {semestre.disciplinas.map((disc) => (
+                      <tr key={disc.componente}>
+                        <td>{disc.nome}</td>
+                        <td>{disc.carga_horaria}h</td>
+                        <td>{disc.componente}</td>
+                      </tr>
+                    ))}
+                  </table>
+                </li>
+              ))}
+            </ul>
+          </section>
+          <aside className="sidebar">
+            <h2>Perfil do Profissional de ADS</h2>
+            <div className="description">
+              <span>O tecnólogo em ADS analisa as necessidades do cliente, modela dados, define a arquitetura, programa o software (codificação), realiza testes e faz a manutenção dos sistemas.</span>
+              <div className="image">
+                <img src="../public/imgs/prog.jpg" alt="Um cara programando" />
+              </div>
+            </div>
+            <div>
+
+              <div className="skills">
+                <div>
+                  <h3>Soft Skills</h3>
+                  <ul>
+                    <li>Comunicação</li>
+                    <li>Trabalho em equipe</li>
+                    <li>Resolução de problemas</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Hard Skills</h3>
+                  <ul>
+                    <li>Programação</li>
+                    <li>Banco de dados</li>
+                    <li>Desenvolvimento web</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </aside>
+        </div>
       </main>
-
       <footer>
-
+        <img src="../public/imgs/logo.png" alt="logo" />
+        <span>Copyright © 2025 - Todos os direitos reservados.</span>
       </footer>
 
     </div>
