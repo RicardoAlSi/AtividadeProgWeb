@@ -96,8 +96,7 @@ function App() {
             <li><a href="#">Contato</a></li>
           </ul>
         </nav>
-      </header>
-
+      </header> 
       <main className="container">
 
         <div className="content">
@@ -162,7 +161,6 @@ function App() {
         <img src="../public/imgs/logo.png" alt="logo" />
         <span>Copyright © 2025 - Todos os direitos reservados.</span>
       </footer>
-
     </div>
   )
 }
