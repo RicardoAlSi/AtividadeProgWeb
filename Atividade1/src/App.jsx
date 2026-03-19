@@ -129,7 +129,7 @@ function App() {
             <div className="description">
               <span>O tecnólogo em ADS analisa as necessidades do cliente, modela dados, define a arquitetura, programa o software (codificação), realiza testes e faz a manutenção dos sistemas.</span>
               <div className="image">
-                <img src="../public/imgs/prog.jpg" alt="Um cara programando" />
+                <img src="/imgs/prog.jpg" alt="Um cara programando" />
               </div>
             </div>
             <div>
