@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.cabecalho {
+  background-color: #15205e;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.userInfo a{
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: #7e7e7e3f;
+}
+
+.userInfo a:hover {
+  background-color: #7e7e7e5c;
+}
+
+.userInfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.mainContent {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #474747;
+  padding: 20px 0px 0px 0px;
+}
+
+.navList {
+  list-style: none;
+}
+.navList li {
+  padding: 15px 20px;
+  transition: background-color 0.3s;
+}
+
+.navList li:hover {
+  background-color: #303030;
+}
+
+.navList li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+  width: calc(50% - 20px);
+  min-width: 270px;
+  max-height: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cabecalhoCard {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.cabecalhoCard img {
+  width: 40px;
+  height: 40px;
+}
+
+.conteudoCard {
+  margin-left: 65px;
+}
